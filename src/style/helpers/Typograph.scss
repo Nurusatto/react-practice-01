@@ -1,0 +1,42 @@
+@use "./mixins.scss" as *;
+@use "./variables.scss";
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  color: var(--color-black);
+  font-family: var(--font-family-base);
+}
+
+h1,
+.h1 {
+  @include fluid-text(40, 35);
+  font-weight: 500;
+  line-height: 1.03;
+}
+
+h3,
+.h3 {
+  @include fluid-text(27, 19);
+  line-height: 1.26;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+h2,
+.h2 {
+  @include fluid-text(35, 27);
+  line-height: 1.03;
+  // font-weight: ;
+}
+
+h4,
+.h4 {
+  @include fluid-text(19, 17);
+  // line-height: ;
+}

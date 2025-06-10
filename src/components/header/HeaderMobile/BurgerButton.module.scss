@@ -1,0 +1,18 @@
+.BurgerButton {
+  @include square(rem(20));
+  background-color: transparent;
+  border: none;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: rem(5);
+  padding: 0;
+  z-index: 1000;
+
+  &Line {
+    display: block;
+    width: 100%;
+    height: rem(2);
+    background-color: var(--color-black);
+  }
+}

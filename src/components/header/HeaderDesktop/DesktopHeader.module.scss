@@ -1,0 +1,41 @@
+.header {
+  &Inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    padding-block: rem(32);
+  }
+
+  &Nav {
+    &List {
+      display: flex;
+      column-gap: fluid(28, 12);
+
+      &Item {
+        display: flex;
+        align-items: center;
+
+        &:has(svg) {
+          column-gap: rem(5);
+          color: var(--color-pink);
+
+          @include hover {
+            color: var(--color-green);
+          }
+        }
+      }
+    }
+  }
+
+  &Logo {
+    display: flex;
+    align-items: center;
+    font-size: rem(20);
+  }
+
+  &SignIn {
+    border: none;
+    border-radius: rem(4);
+    padding: rem(4) rem(8);
+  }
+}

@@ -1,0 +1,36 @@
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:
+    center,
+    99% -14rem;
+  display: flex;
+  justify-content: center;
+
+  &Inner {
+    padding-block: rem(80);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: rem(28);
+
+    &Title {
+      white-space: pre-line;
+      font-size: rem(24);
+      text-align: center;
+    }
+
+    &Description {
+      white-space: pre-line;
+      font-size: rem(16);
+    }
+
+    &Button {
+      border-radius: rem(4);
+      padding: rem(16) rem(24);
+      background-color: var(--color-pink);
+      color: var(--color-white);
+      border: none;
+    }
+  }
+}

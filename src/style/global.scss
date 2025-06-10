@@ -1,0 +1,25 @@
+@use "./helpers/index.scss" as *;
+
+html.is-lock {
+  overflow: hidden;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  @include fluid-text(18, 14);
+  font-family: "Rubik";
+}
+
+main {
+  background-color: var(--color-light-grey);
+  flex: 1;
+}
+
+// footer {
+// }

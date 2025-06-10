@@ -1,0 +1,35 @@
+@use "./functions.scss" as *;
+@use "./media.scss" as *;
+
+:root {
+  --color-black: #133f42;
+  --color-grey: #849a9c;
+  --color-white: #ffffff;
+  --color-pink: #ff4a96;
+  --color-light-grey: #f8f8f8;
+  --color-light-pink: #fff4f9;
+  --color-green: #1bd687;
+  --color-middle-grey: #c2cdce;
+
+  --font-family-base: "Rubik", sans-serif;
+
+  --transition-duration: 0.2s;
+
+  --container-width: #{rem(1200)};
+  --container-padding-x: #{rem(120)};
+
+  @include tablet {
+    --container-width: #{rem(800)};
+    --container-padding-x: #{rem(20)};
+  }
+
+  @include mobile {
+    --container-width: #{rem(600)};
+    --container-padding-x: #{rem(12)};
+  }
+
+  @include mobile-s {
+    --container-width: #{rem(300)};
+    --container-padding-x: #{rem(0)};
+  }
+}
