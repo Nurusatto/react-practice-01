@@ -1,5 +1,5 @@
 import styles from "./DesktopHero.module.scss";
-import heroImg from "../../../assets/img/heroImg.jpeg";
+import heroImg from "@assets/img/heroImg.jpeg";
 import { Button } from "@components/UiComponents/Button";
 
 export const DesktopHero = () => {

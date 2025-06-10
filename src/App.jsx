@@ -1,12 +1,12 @@
 import { Header } from "@components/header/Header";
-import { Hero } from "@components/hero/Hero";
+import { Home } from "@pages/Home/Home";
 
 function App() {
   return (
     <>
       <Header />
       <main>
-        <Hero />
+        <Home />
       </main>
     </>
   );

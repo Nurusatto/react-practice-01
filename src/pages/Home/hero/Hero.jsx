@@ -1,8 +1,8 @@
 import { useBreakpoint } from "@components/hooks/useBreakPoint";
 
-import { DesktopHero } from "@components/hero/HeroDesktop/DesktopHero";
-import { HeroTablet } from "@components/hero/HeroTablet/HeroTablet";
-import { HeroMobile } from "@components/hero/HeroMobile/HeroMobile";
+import { DesktopHero } from "./HeroDesktop/DesktopHero";
+import { HeroTablet } from "./HeroTablet/HeroTablet";
+import { HeroMobile } from "./HeroMobile/HeroMobile";
 
 export const Hero = function () {
   const breakpoint = useBreakpoint();
