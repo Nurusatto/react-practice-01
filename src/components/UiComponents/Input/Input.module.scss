@@ -1,0 +1,25 @@
+.Inpt {
+  &Wrapper {
+    height: rem(48);
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+
+  &Icon {
+    position: absolute;
+    left: rem(16);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &Enter {
+    height: 100%;
+    width: 100%;
+    padding-block: rem(16);
+    padding-left: rem(48);
+    background-color: var(--color-light-grey);
+    border: none;
+    border-radius: 4px;
+  }
+}

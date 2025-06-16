@@ -8,8 +8,8 @@ export const Professions = function () {
 
   return (
     <>
-      {["desktop", "laptop"].includes(breakpoint) && <ProfessionsDesktop />}
-      {["mobile", "tablet"].includes(breakpoint) && <ProfessionsTablet />}
+      {["desktop", "laptop", "tablet"].includes(breakpoint) && <ProfessionsDesktop />}
+      {["mobile"].includes(breakpoint) && <ProfessionsTablet />}
     </>
   );
 };

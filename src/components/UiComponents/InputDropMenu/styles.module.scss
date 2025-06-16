@@ -1,0 +1,33 @@
+.BackDrop {
+  inset: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: var(--index-always);
+}
+
+.DropList {
+  background-color: var(--color-white);
+  &Item {
+    padding-inline: rem(16);
+    padding-block: rem(16);
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-black);
+
+    @include hover {
+      background-color: var(--color-light-grey);
+    }
+
+    > div {
+      > *:nth-child(2) {
+        margin-left: rem(12);
+      }
+    }
+
+    @include mobile {
+      > div:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}

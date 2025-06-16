@@ -15,6 +15,14 @@
 
   --transition-duration: 0.2s;
 
+  --index-dropdown: 100;
+  --index-sticky: 200;
+  --index-fixed: 300;
+  --index-backdrop: 400;
+  --index-modal: 500;
+  --index-always: 999;
+  --index-header-overlay: 1000;
+
   --container-width: #{rem(1200)};
   --container-padding-x: #{rem(120)};
 

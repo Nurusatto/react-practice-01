@@ -1,0 +1,33 @@
+.professions {
+  &Page {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    &Input {
+      background-color: var(--color-white);
+      border-radius: 4px;
+      display: flex;
+      padding-block: rem(16);
+      padding-inline: rem(16);
+      column-gap: rem(20);
+      font-size: rem(15);
+      align-items: center;
+      box-shadow: 0px 16px 32px 0px rgba(19, 63, 66, 0.04);
+
+      &Btn {
+        padding: rem(12) rem(24);
+        white-space: nowrap;
+        color: var(--color-pink);
+        border: 1px solid var(--color-pink);
+        border-radius: 4px;
+        background-color: transparent;
+        height: rem(48);
+
+        &:last-child {
+          border-color: var(--color-black);
+          color: var(--color-black);
+        }
+      }
+    }
+  }
+}
