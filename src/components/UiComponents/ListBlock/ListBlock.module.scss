@@ -1,0 +1,23 @@
+.list {
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: rem(20);
+    row-gap: rem(40);
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      row-gap: rem(16);
+    }
+  }
+
+  &Row {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(16);
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+}

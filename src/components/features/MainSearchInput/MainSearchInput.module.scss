@@ -1,0 +1,43 @@
+.ContainerInput {
+  background-color: var(--color-white);
+  border-radius: 4px;
+  display: flex;
+  padding-block: rem(16);
+  padding-inline: rem(16);
+  column-gap: rem(20);
+  font-size: rem(15);
+  align-items: center;
+  box-shadow: 0px 16px 32px 0px rgba(19, 63, 66, 0.04);
+
+  @include mobile {
+    flex-direction: column;
+    row-gap: rem(16);
+  }
+
+  &Btn {
+    padding: rem(12) rem(24);
+    white-space: nowrap;
+    color: var(--color-pink);
+    border: 1px solid var(--color-pink);
+    border-radius: 4px;
+    background-color: transparent;
+    height: rem(48);
+
+    &:nth-of-type(2) {
+      border-color: var(--color-black);
+      color: var(--color-black);
+
+      @include mobile {
+        border-color: var(--color-grey);
+        color: var(--color-grey);
+        width: 100%;
+      }
+    }
+
+    &:nth-of-type(1) {
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+}

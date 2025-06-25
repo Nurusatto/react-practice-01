@@ -1,19 +1,28 @@
+import { ListBlockMain } from "@components/features/ListBlockMain/ListBlockMain";
 import styles from "./ProfessionsDesktop.module.scss";
-import { InputDropList } from "@components/UiComponents/InputDropMenu/InputDropList";
-import { Button } from "@components/UiComponents/Button";
+import { MainSearchInput } from "@components/features/MainSearchInput/MainSearchInput";
+import { ListBlockVacansi } from "@components/features/ListBlockVacansi/ListBlockVacansi";
 
 export const ProfessionsDesktop = () => {
   return (
     <>
       <section>
         <div className={`${styles.professionsPage} container`}>
-          <div className={styles.professionsPageInput}>
-            <InputDropList />
-            <Button className={styles.professionsPageInputBtn}>Все вакансии</Button>
-            <Button className={styles.professionsPageInputBtn}>Все резюме</Button>
-          </div>
-          <div className={styles.professionsServices}>
-            <div className={styles.professionsServicesCard}></div>
+          <MainSearchInput />
+          <ListBlockMain />
+          <ListBlockVacansi />
+          <div className={styles.professionsPageExtra}>
+            <div>
+              <span>
+                Категория, Еще категория, Категория, Категория,
+                Категория, Еще категория, Категория, Категория, Еще
+                категория, Категория, Категория, Еще категория,
+                Категория, Категория, Еще категория, Категория,
+                Категория, Категория, Еще категория, Категория,
+                Категория, Категория, Еще категория, Категория,
+                Категория,
+              </span>
+            </div>
           </div>
         </div>
       </section>

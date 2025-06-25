@@ -1,0 +1,61 @@
+.card {
+  &Wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    padding: rem(28);
+    align-items: end;
+    border-radius: rem(4);
+    box-shadow: 0 16px 32px 0 rgba(19, 63, 66, 0.04);
+
+    @include tablet {
+      justify-content: center;
+    }
+
+    @media (max-width: 1120px) {
+      justify-content: center;
+    }
+  }
+
+  &Content {
+    min-width: rem(180);
+
+    @media (max-width: 1120px) {
+    }
+  }
+
+  &Info {
+    & > p {
+      color: var(--color-grey);
+    }
+    margin-bottom: rem(20);
+  }
+
+  &Btn {
+    display: flex;
+    gap: rem(16);
+    & > button {
+      padding: rem(12) rem(20);
+      border-radius: rem(4);
+      border: none;
+    }
+
+    & > button:first-of-type {
+      background-color: var(--color-light-pink);
+      color: var(--color-pink);
+    }
+
+    & > button:last-of-type {
+      background-color: var(--color-light-grey);
+      color: var(--color-grey);
+    }
+  }
+
+  &Img {
+    min-width: rem(143);
+
+    @media (max-width: 1120px) {
+      display: none;
+    }
+  }
+}

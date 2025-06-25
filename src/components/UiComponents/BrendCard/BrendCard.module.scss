@@ -1,0 +1,24 @@
+.Breand {
+  &Span {
+    color: var(--color-grey);
+    font-size: rem(14);
+    text-align: center;
+  }
+}
+
+.CardBreand {
+  display: flex;
+  width: rem(168);
+  height: rem(100);
+  flex-direction: column;
+  padding: rem(12) rem(20);
+  align-items: center;
+  row-gap: rem(16);
+  background-color: var(--color-white);
+  border-radius: rem(4);
+  box-shadow: 0 16px 32px 0 rgba(19, 63, 66, 0.04);
+
+  @include tablet {
+    width: 100%;
+  }
+}
