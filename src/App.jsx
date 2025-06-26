@@ -1,3 +1,4 @@
+import { Footer } from "@components/footer/Footer";
 import { Header } from "@components/header/Header";
 import { Home } from "@pages/Home/Home";
 
@@ -8,6 +9,7 @@ function App() {
       <main>
         <Home />
       </main>
+      <Footer />
     </>
   );
 }

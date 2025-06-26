@@ -7,7 +7,7 @@ export const ListBlockMain = () => {
     <ListBlock
       data={brends}
       layout="row"
-      renderItem={(item) => <BreandCard {...item} />}
+      renderItem={(item) => <BreandCard key={item.id} {...item} />}
     />
   );
 };

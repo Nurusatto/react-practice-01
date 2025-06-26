@@ -6,7 +6,11 @@ export const ListBlock = ({
   renderItem,
 }) => {
   const classLayout =
-    layout === "row" ? styles.listRow : styles.listGrid;
+    layout === "row"
+      ? styles.listRow
+      : layout === "grid"
+        ? styles.listGrid
+        : styles.listGridFooter;
 
   return (
     <div className={` ${classLayout}`}>

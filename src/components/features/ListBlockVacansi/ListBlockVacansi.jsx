@@ -6,7 +6,7 @@ export const ListBlockVacansi = () => {
   return (
     <ListBlock
       data={vacansi}
-      renderItem={(item) => <VacansiCard {...item} />}
+      renderItem={(item) => <VacansiCard key={item.id} {...item} />}
     />
   );
 };

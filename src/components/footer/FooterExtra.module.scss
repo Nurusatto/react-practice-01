@@ -1,0 +1,38 @@
+footer {
+  margin-bottom: rem(80);
+
+  @include tablet {
+    margin-bottom: rem(40);
+  }
+}
+
+.footerExtra {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--color-grey);
+  margin-top: rem(80);
+
+  &Span {
+    margin-bottom: rem(30);
+
+    @include tablet {
+      margin-bottom: rem(16);
+    }
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &List {
+    display: flex;
+    justify-content: center;
+    column-gap: rem(28);
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: rem(16);
+    }
+  }
+}

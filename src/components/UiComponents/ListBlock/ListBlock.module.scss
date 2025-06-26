@@ -11,6 +11,23 @@
     }
   }
 
+  &GridFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: rem(20);
+    row-gap: rem(40);
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: rem(16);
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      place-items: center;
+    }
+  }
+
   &Row {
     display: flex;
     justify-content: space-between;
